@@ -1,0 +1,65 @@
+================================================================================
+TRAFFIC ACCIDENTS API - FULL PROMPT HISTORY LOG
+================================================================================
+
+--- PHASE 1: PROJECT INITIATION & FLASK SETUP (RECONSTRUCTED) ---
+1. "Initialize a new Python Flask project structure for a Traffic Accidents API."
+2. "Create a virtual environment and generate a requirements.txt file for Flask, SQLAlchemy, and Marshmallow."
+3. "How do I structure a Flask application using the Application Factory pattern (create_app)?"
+4. "Create a 'User' model with fields: id, username, password, role, and status."
+5. "Create a 'Accident' model with fields: id, description, location, status, and reporter_id."
+6. "How do I use Python Enum for UserRole (Admin, Officer, User) and UserStatus?"
+7. "Write a script to initialize the SQLite database and create the tables."
+8. "How do I configure Flask-Migrate to handle database schema changes?"
+
+--- PHASE 2: AUTHENTICATION & SECURITY (RECONSTRUCTED) ---
+9. "Create a /register endpoint that hashes passwords using pbkdf2_sha256."
+10. "Create a /login endpoint that returns a JWT token for authentication."
+11. "How do I create a custom decorator @admin_required to protect specific routes?"
+12. "Implement a route guard that checks if a user's status is 'APPROVED' before logging in."
+13. "Why am I getting a circular import error between models.py and app.py?"
+14. "Fix the 'NameError: name app is not defined' when running Flask commands."
+
+--- PHASE 3: DOCKER CONFIGURATION (RECONSTRUCTED) ---
+15. "Generate a Dockerfile for a Python 3.10 Flask application."
+16. "Create a docker-compose.yml file to run the backend service on port 5000."
+17. "How do I persist the SQLite database using Docker volumes?"
+18. "My Docker container exits immediately. How do I keep it running?"
+19. "How do I view Docker logs to debug a crashing container?"
+
+--- PHASE 4: THE DEBUGGING & ADMIN PROMOTION SESSION (ACTUAL) ---
+20. "I have a user JSON: { 'username': 'jaouher', 'password': '...', 'role': 'user' }. How do I change this role to admin using the terminal?"
+21. "Explain how to access the SQLite database inside the 'instance' folder via CLI."
+22. "I am getting an error: 'The term UPDATE is not recognized' in PowerShell. How do I run SQL commands correctly?"
+23. "I want to execute these commands specifically inside the VS Code terminal."
+24. "My database file is located at 'instance/data.db'. Adjust the sqlite3 command to point there."
+25. "Error: 'sqlite3' is not recognized as a command. How do I fix this on Windows?"
+26. "How do I use 'docker exec' to run sqlite3 inside the running container?"
+27. "Error response from daemon: container 'traffic_accidents' is not running. How do I fix this?"
+28. "Error: 'No such container'. How do I find the correct container ID or name?"
+29. "I ran 'docker ps'. Here is the output. Which name should I use?"
+30. "Error: 'exec: sqlite3: executable file not found in $PATH'. The tool is missing in the container."
+31. "Since sqlite3 is missing, how do I use a Python one-liner command inside Docker to update the database?"
+32. "I tried running the Python script but got an ImportError. How do I fix the app context?"
+33. "Show me how to edit the Dockerfile to install sqlite3 permanently."
+34. "Provide the full code for the Dockerfile including 'apt-get install sqlite3'."
+35. "How do I rebuild the Docker image after changing the Dockerfile?"
+36. "Now that sqlite3 is installed, show me the command to enter the database shell again."
+37. "I want to create a new user via the API and then assign them the admin role. What is the workflow?"
+38. "I ran the UPDATE command but got a 'LookupError: approved is not a valid Enum'. Fix the SQL query."
+39. "I pasted the SQL command into PowerShell again and got 'UPDATE not recognized'. Remind me how to enter the shell first."
+40. "How do I verify that the user 'jaouher' is now an Admin using a SELECT query?"
+41. "Why does the SELECT query show the old role? Did I forget to commit or add a semicolon?"
+
+--- PHASE 5: DEFINING SYSTEM ROLES & LOGIC (ACTUAL) ---
+42. "Generate a description of what Admins can do versus what Officers can do."
+43. "List the specific interface options for Admins (User lists, approval queues)."
+44. "List the specific interface options for Officers (Accident verification, denial)."
+45. "What are the specific API endpoints required for the Admin dashboard?"
+46. "What are the specific API endpoints required for the Officer dashboard?"
+47. "How should the frontend handle role-based redirection (e.g., specific sidebars)?"
+
+--- PHASE 6: DOCUMENTATION & CLEANUP (ACTUAL) ---
+48. "Compile a list of all technical prompts used in this session for my records."
+49. "Format the prompts into a clean list excluding non-relevant chatter."
+50. "Generate a text file download of the entire prompt history."
